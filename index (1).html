@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥 CSC - Cyber Squad Club Form 🔥</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  margin:0;
+  font-family:'Orbitron',sans-serif;
+  background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  background-attachment: fixed;       /* Fixed background */
+  background-size: cover;             /* Cover full screen */
+  background-repeat: no-repeat;       /* No repeat */
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:50px 0;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(0,0,0,0.85);
+  padding: 40px 50px;
+  border-radius: 20px;
+  width:90%;
+  max-width:700px;
+  box-shadow:0 0 30px rgba(255,255,255,0.2),0 0 60px #BB86FC;
+  border:2px solid #BB86FC;
+}
+
+h1 {
+  text-align:center;
+  font-size:32px;
+  margin-bottom:30px;
+  color:#BB86FC;
+  text-shadow:0 0 8px #BB86FC,0 0 20px #985EFF;
+}
+
+form label {
+  display:block;
+  margin-top:18px;
+  margin-bottom:6px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+
+input, select, textarea {
+  width:100%;
+  padding:12px 15px;
+  border-radius:12px;
+  border:1px solid #444;
+  background:#1a1a1a;
+  color:#fff;
+  font-size:15px;
+  box-sizing:border-box;
+  transition:all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline:none;
+  border:2px solid #BB86FC;
+  box-shadow:0 0 10px #BB86FC;
+}
+
+textarea {
+  min-height:120px;
+  resize:vertical;
+}
+
+button {
+  margin-top:25px;
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:none;
+  background:linear-gradient(90deg,#BB86FC,#985EFF);
+  color:#fff;
+  font-weight:bold;
+  font-size:17px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  box-shadow:0 0 10px #BB86FC,0 0 20px #985EFF;
+}
+
+button:hover {
+  background:linear-gradient(90deg,#985EFF,#BB86FC);
+  box-shadow:0 0 20px #BB86FC,0 0 40px #985EFF;
+  transform:scale(1.02);
+}
+
+footer {
+  margin-top:25px;
+  font-size:13px;
+  text-align:center;
+  color:#bbb;
+  text-shadow:0 0 5px #000;
+}
+
+.checkbox-group {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:10px;
+}
+
+.checkbox-group label {
+  text-transform:none;
+  font-weight:500;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>CSC - Cyber Squad Club Form</h1>
+<form id="cscForm" enctype="multipart/form-data">
+<label>Name ng Dating Club:</label>
+<input type="text" name="oldClub" placeholder="Enter old club name">
+
+<label>Name ng Owner sa Old Club:</label>
+<input type="text" name="ownerOldClub" placeholder="Enter owner name">
+
+<label>Real Name Mo:</label>
+<input type="text" name="realName" placeholder="Enter your real name">
+
+<label>Main Facebook account mo?</label>
+<input type="text" name="fbAccount" placeholder="Enter FB account link">
+
+<label>Gender:</label>
+<select name="gender">
+  <option>Select Gender</option>
+  <option>Male</option>
+  <option>Female</option>
+</select>
+
+<label>CPM ID:</label>
+<input type="text" name="cpmId" placeholder="Enter CPM ID">
+
+<label>CPM In-Game Name:</label>
+<input type="text" name="cpmName" placeholder="Enter in-game name">
+
+<label>Age:</label>
+<input type="number" name="age" placeholder="Enter your age">
+
+<label>Anong taon ka nag start maglaro:</label>
+<input type="text" name="startYear" placeholder="Year started playing">
+
+<label>Active ba for events and sa GC?:</label>
+<select name="active">
+  <option>Select</option>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<label>Ilan na club nasalihan?:</label>
+<input type="number" name="clubsJoined" placeholder="Number of clubs joined">
+
+<label>Sumasama kaba sa events at tambay?:</label>
+<select name="eventsParticipation">
+  <option>Select</option>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<label>Bakit ka umalis sa dating club? (Explain):</label>
+<textarea name="reasonLeft" placeholder="Explain why you left previous club"></textarea>
+
+<label>Marunong kaba mag daily task sa CPM?:</label>
+<select name="dailyTask">
+  <option>Select</option>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<label>Bakit mo gusto sumali sa club namin? (Explain):</label>
+<textarea name="reasonJoin" placeholder="Your reason to join our club"></textarea>
+
+<label>Shy or Coent:</label>
+<select name="shyCoent">
+  <option>Select</option>
+  <option>Shy</option>
+  <option>Coent</option>
+</select>
+
+<label>Paki lagyan ng check kung saan ka dito nabagay:</label>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="roles" value="Photographer"> Photographer</label>
+  <label><input type="checkbox" name="roles" value="Copy Maker"> Copy Maker</label>
+  <label><input type="checkbox" name="roles" value="Designer"> Designer</label>
+  <label><input type="checkbox" name="roles" value="Video-Grapher"> Video-Grapher</label>
+  <label><input type="checkbox" name="roles" value="Recruiter"> Recruiter</label>
+  <label><input type="checkbox" name="roles" value="Editor"> Editor</label>
+  <label><input type="checkbox" name="roles" value="Member"> Member</label>
+  <label><input type="checkbox" name="roles" value="GG User"> GG User</label>
+  <label><input type="checkbox" name="roles" value="Donator"> Donator</label>
+</div>
+
+<label>Upload Requirements Photo:</label>
+<input type="file" name="photo" accept="image/*,.pdf">
+
+<label>Note / Suggestions:</label>
+<textarea name="notes" placeholder="Write anything..."></textarea>
+
+<p style="margin-top:15px; font-size:13px; color:#BB86FC;">
+🔥 Requirements: ID card, Brangay ID, or any valid ID. For confirmation lang.
+</p>
+
+<button type="submit">🔥 Submit 🔥</button>
+</form>
+<footer>© 2025 SupremeModzdev. All Rights Reserved.</footer>
+</div>
+
+<script>
+// 🔥 Bot token at chat IDs 🔥
+const BOT_TOKEN = '7585170845:AAHdsY0_eBGSUab13LwqlzgcY7D3GVHShc8';
+const CHAT_IDS = ['6614066633','8191302517'];
+
+document.getElementById('cscForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Box-style Telegram message
+    let message = "╔═══════════════════════╗\n";
+    message += "║📝 CSC Membership Form!\n";
+    message += "╠═══════════════════════╣\n";
+
+    data.forEach((value, key) => {
+        if(key === 'roles'){
+            if(!message.includes("║➪ Roles:")) message += "║➪ Roles: ";
+            message += value + " | ";
+        } else if(key !== 'photo'){ // skip file in text message
+            let label = key.replace(/([A-Z])/g, ' $1');
+            label = label.charAt(0).toUpperCase() + label.slice(1);
+            message += `║➪ ${label}: ${value}\n`;
+        }
+    });
+
+    message = message.replace(/\| $/, "");
+    message += "╚═══════════════════════╝";
+
+    // Send message to all chat IDs
+    for(const chatId of CHAT_IDS){
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({chat_id: chatId, text: message})
+        });
+    }
+
+    // Send photo if uploaded
+    const fileInput = form.querySelector('input[name="photo"]');
+    if(fileInput.files.length > 0){
+        const file = fileInput.files[0];
+        const formData = new FormData();
+        formData.append('chat_id', CHAT_IDS[0]); // send file to first chat only (or loop if needed)
+        formData.append('document', file);
+
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
+            method: 'POST',
+            body: formData
+        });
+    }
+
+    alert("Form submitted successfully!");
+    form.reset();
+});
+</script>
+</body>
+</html>
